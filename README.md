@@ -4,8 +4,8 @@
 and this project is not ready for third-party use.
 
 ## Headless e-Commerce and Marketing API Service
-QuickCommerce is a free open source e-commerce platform for online merchants who only want headless e-commerce engine 
-to communicate with e-commerce client applications, websites, and more. OpenCart provides a unique and powerful 
+QuickCommerce is a free open source e-commerce platform for online merchants who want a headless e-commerce engine 
+to communicate with their e-commerce client applications, websites, and more. OpenCart provides a unique and powerful 
 foundation and a FREE out-of-the-box solution for your retail store's e-commerce application needs, and comes with 
 everything you need to create, scale and run your business.
 
