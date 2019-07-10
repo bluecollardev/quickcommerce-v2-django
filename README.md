@@ -1,7 +1,7 @@
 # quickcommerce-v2-django
 
-!IMPORTANT: This project is currently in development and is not ready for use. Functionally, this is a complete port
-of the QuickCommerce e-Commerce and e-Commerce API extension packs for OpenCart 2.x.
+!IMPORTANT: We're currently early in the process of porting our QuickCommerce e-commerce platform to Django
+and this project is not ready for third-party use.
 
 ## Headless e-Commerce and Marketing API Service
 QuickCommerce is a free open source e-commerce platform for online merchants who only want headless e-commerce engine 
@@ -34,7 +34,9 @@ for Android, but is free to use for any open-source projects or as a complement 
 - QuickCommerce PropertyRentalPro - provides functionality for your property-rental business
 
 ### Why?
-QuickCommerce is the successor to the original QuickCommerce enhancement pack + OpenCart that we previously used for client projects.
+Functionally, this is a complete port of the QuickCommerce e-Commerce and e-Commerce API extension packs for OpenCart 2.x.
+
+This re-write is the successor to the original QuickCommerce enhancement pack + OpenCart that we previously used for client projects.
 This time, we're building from the ground up using Python, Django REST Framework, Swagger, and Keycloak SSO. 
 And as opposed to being an extension pack, the new version of QuickCommerce is a full-fledged headless e-commerce API.
 
