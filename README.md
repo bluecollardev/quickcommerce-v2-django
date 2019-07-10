@@ -21,7 +21,7 @@ for Android, but is free to use for any open-source projects or as a complement 
 - Invoicing with QuickBooks integration
 - Tax rules with QuickBooks integration
 - Importing your data from QuickBooks Desktop
-- SSO authentication via Red Hat Keycloak
+- OAuth auth via Red Hat Keycloak
 
 ## Choose your flavor - QuickCommerce comes in multiple flavors
 - Vanilla - includes functionality for Online-Retail only
