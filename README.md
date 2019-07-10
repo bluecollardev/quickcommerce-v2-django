@@ -14,11 +14,12 @@ for Android, but is free to use for any open-source projects or as a complement 
 
 ## QuickCommerce API supports
 - Multiple stores
-- Product and inventory management
+- Customer account management with QuickBooks integration
+- Product and categories (for your online store)
+- Inventory management with QuickBooks integration
+- Purchase orders with QuickBooks integration
 - Invoicing with QuickBooks integration
-- Tax rules
-- Customer account management
-- Integration with QuickBooks Online
+- Tax rules with QuickBooks integration
 - Importing your data from QuickBooks Desktop
 - SSO authentication via Red Hat Keycloak
 
