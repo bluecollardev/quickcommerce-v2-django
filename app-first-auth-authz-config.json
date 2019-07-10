@@ -1,0 +1,86 @@
+{
+  "allowRemoteResourceManagement": true,
+  "policyEnforcementMode": "ENFORCING",
+  "resources": [
+    {
+      "name": "Default Resource",
+      "type": "urn:app-first-auth:resources:default",
+      "ownerManagedAccess": false,
+      "attributes": {},
+      "_id": "3434c7f3-90a2-49ce-acb4-05399ce03b79",
+      "uris": [
+        "/*"
+      ]
+    }
+  ],
+  "policies": [
+    {
+      "id": "e6cb0025-ed05-424a-9c8b-d06022b3401f",
+      "name": "normal-user",
+      "description": "Allow users with normal-user role",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "config": {
+        "roles": "[{\"id\":\"app-first-auth/normal-user\",\"required\":true}]"
+      }
+    },
+    {
+      "id": "d418131a-6725-4f5e-bb48-f60046510e96",
+      "name": "super-user",
+      "description": "Allow users with super-user role",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "config": {
+        "roles": "[{\"id\":\"app-first-auth/super-user\",\"required\":true}]"
+      }
+    },
+    {
+      "id": "41d51a44-74fe-4463-9296-ded67108f39b",
+      "name": "full-access",
+      "description": "Allow full access if policy conditions meet",
+      "type": "scope",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "config": {
+        "scopes": "[\"product:add\",\"product:update\",\"product:delete\",\"product:view\"]",
+        "applyPolicies": "[\"super-user\"]"
+      }
+    },
+    {
+      "id": "313c09ed-585f-4971-85eb-c65903f1b4e7",
+      "name": "read-only-access",
+      "description": "Allow read only access if policy conditions meet",
+      "type": "scope",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "config": {
+        "scopes": "[\"product:view\"]",
+        "applyPolicies": "[\"normal-user\"]"
+      }
+    }
+  ],
+  "scopes": [
+    {
+      "id": "8d6a05b1-52ec-463b-a352-0f4e6c1b8618",
+      "name": "product:delete",
+      "displayName": "product delete"
+    },
+    {
+      "id": "f9a7e2ba-125a-41d5-877f-67826cdf64d5",
+      "name": "product:add",
+      "displayName": "product add"
+    },
+    {
+      "id": "5273185d-4191-48ec-bb85-e62b7ddad1f5",
+      "name": "product:update",
+      "displayName": "product update"
+    },
+    {
+      "id": "eefa1936-caa2-4f81-b347-bf7e98d122aa",
+      "name": "product:view",
+      "displayName": "product view"
+    }
+  ]
+}
