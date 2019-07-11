@@ -33,6 +33,9 @@ for Android, but is free to use for any open-source projects or as a complement 
 - QuickCommerce ServicePro - provides functionality for your service business
 - QuickCommerce PropertyRentalPro - provides functionality for your property-rental business
 
+### System Diagram
+https://drive.google.com/file/d/1e905cgyKb45KFyt4gCK-DyP0Ie6-7HxT/view?usp=sharing
+
 ### Why?
 Functionally, this is a complete port of the QuickCommerce e-Commerce and e-Commerce API extension packs for OpenCart 2.x.
 
